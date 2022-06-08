@@ -6,6 +6,8 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+    /* Navigation Bar */
+a{text-decoration: none;}
 header {
     background-color: snow;
     width: 100%;
@@ -19,7 +21,7 @@ header {
 .mainpage {
     text-decoration: none;
     color: 	#00b39b;
-    font-weight: 800;
+    font-weight: 500;
     font-size: 1.5em;
 }
 .navigation a{
@@ -32,8 +34,16 @@ header {
 .navigation a:hover{
     color: #00b39b;
 }
-section {
-    padding: 100px 200px
+
+    /* 1st Section */
+ 
+.commun-section{
+    max-width: 1000;
+    padding: 0 20px;
+}
+
+.main{
+    padding: 200px 300px 50px 300px
 }
 .main img{
     display: block;
@@ -56,10 +66,258 @@ section {
     box-sizing: inherit;
     display: flex
 }
-.parag1 {
+.parag {
     color: #747474;
     width: 50%;
     float: left;
     min-height: 1px;                                                    
     padding: 10px
+}
+.logoo {
+    width: 20px;
+    height: 20px;
+}
+
+/* 2nd Section */
+
+.service {
+    margin: 50px 150px;
+    padding: 10px;
+    height: 400px;
+    overflow: hidden;
+    
+}
+.services { 
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin: 2.5px;
+}
+.service-element {
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    border-radius: 15px;
+    width: 30%;
+    height: 350px;
+}
+.for-patient{
+    background-color: #00b39b;
+}
+.for-doctor{
+    background-color: #3d83df;
+}
+.for-clinics{
+    background-color: #1b2734;
+}
+.patient-description {
+    border-radius: 15px;
+    margin: 2.5px;
+    padding: 5px ;
+    height: 340px;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: flex-start; */
+}  
+img {
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+    /* 3rd Section */
+
+.companies {
+    margin: 50px 160px;
+    padding: 1px;
+    display: flex;
+}
+.companies h1{
+    text-align: left;
+    letter-spacing: 0.5px;
+    color: #00b39b;
+    font-size: 1.4em;
+    font-weight: 400;
+    margin: 0.25em;
+    padding: 0.25em;
+}
+.companies ul {
+    color: #ababab;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 10px;
+
+}
+.company-name a{
+    color: #ababab;
+    font-size: 1.5em ;
+}
+
+    /* 4th parag */
+
+.platform {
+    background-image: linear-gradient(-45deg,rgba(0,204,177,.01) 5%,rgba(61,199,223,.1));
+    padding: 1.8em 0 0.6em;
+    overflow: hidden;
+    height: 700px;
+}
+.parag1 {
+    width: 100%;
+    margin: 0;
+    padding: 0%;
+}
+.parag1 h1{
+    text-align: left;
+    letter-spacing: 0.5px;
+    color: #00b39b;
+    font-size: 2em;
+    font-weight: 300;
+    margin: 0.50em;
+    padding: 0.25em;
+}
+.parag1 p {
+    color: #747474;
+    max-width: 400px;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.7142857143;
+    margin: 0.5em 1.5em;
+}
+.division {
+    border-radius: 10px;
+    display: flex;
+}
+.blocks {
+    display: flex;
+    flex-wrap: wrap;
+}
+.dev {
+    background-color: white;
+    border-radius: 5px;
+    margin: 20px;
+    width: 30%;
+    height: 300px;
+}
+.dev h3 {
+    font-size: 1em;
+    font-weight: 200;
+    color: #00b39b;
+    margin: 0.5em 0.5em;
+}
+    /* 5th Section */
+
+.offices {
+    font-size: .875em;
+    margin: 0px 0px 0px 0px;
+    height: 1600px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+}
+.off {
+    margin: 15px 119px -260px 494px;
+    border:#ababab
+}
+.offices h1 {
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #00b39b;
+    font-size: 1.8em;
+    font-weight: 300;
+    padding: 0.3em;
+}
+.offices p {
+    line-height: 2;
+    font-size: 1.1em;
+}
+.ville {
+    margin: 20px 106px ;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+.figure {
+    height: 300px;
+    padding: 10px;
+    margin: 52px;
+}
+.figure img{
+    width: 350px;
+    height: 350px;
+    border-radius: 5px;
+}
+.organize-ville {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    margin: 5px;
+}
+.organize-ville h2{
+    color: #747474;
+    font-weight: 400;
+}
+.bttn {
+    border-radius: 4px;
+    padding: 1em 1.5em;
+    background: #3d83df;
+    line-height: 1em;
+    color: white;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+}
+    /* 6th Section */
+
+.join-us {
+    width: 500px;
+    margin: 0 auto 4.rem;
+    font-size: .875em;
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: center;
+    margin: 100px 500px;
+}
+.join-us h1{
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #333;
+    font-size: 2em;
+    font-weight: 300;
+    padding: 0.3em;
+}
+.buttn {
+    border-radius: 4px;
+    padding: 1em 1.5em;
+    background: #3d83df;
+    line-height: 1em;
+    color: white;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+}
+
+    /* Footer */
+hr.line{
+    border-top: 1px solid #cac8c8;
+}
+.main-footer {
+    font-size: 1em;
+    margin: 50px 150px;
+    text-align: center;
+}
+.footr p{
+    color: #ababab;
+}
+.footr a {
+    text-decoration: none;
 }
